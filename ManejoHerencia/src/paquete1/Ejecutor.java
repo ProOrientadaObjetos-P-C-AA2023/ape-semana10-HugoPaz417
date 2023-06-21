@@ -25,14 +25,14 @@ public class Ejecutor {
             switch (opcionSeleccionada) {
                 case 1:
                     // Adquirir datos del beneficiario
-                    System.out.println("Nombre beneficiario");
-                    String nomBeneficiario = sc.nextLine();
-                    System.out.println("Apellidos beneficiario");
+                    System.out.println("Escriba el nombre del beneficiario");
+                    String nombreBeneficiario = sc.nextLine();
+                    System.out.println("Escriba los apellidos beneficiario");
                     String apellidosBeneficiario = sc.nextLine();
-                    System.out.println("User Beneficiario");
-                    String userBeneficiario = sc.nextLine();
+                    System.out.println("Escriba el UserName Beneficiario");
+                    String userNameBeneficiario = sc.nextLine();
                     // Crea el beneficiario con los parámetros/datos adquiridos
-                    Persona beneficiario = new Persona(nomBeneficiario, apellidosBeneficiario, userBeneficiario);
+                    Persona beneficiario = new Persona(nombreBeneficiario, apellidosBeneficiario, userNameBeneficiario);
 
                     // Prestamo Automovil
                     System.out.println("Tiempo para el préstamo en meses");
@@ -62,8 +62,8 @@ public class Ejecutor {
                     // Crear objeto PrestamoAutomovil y establecer valores
                     PrestamoAutomovil prestamoAutomovil = new PrestamoAutomovil(tipoAuto, marcaAuto, garante1, valorAuto);
                     prestamoAutomovil.beneficiario = beneficiario;
-                    prestamoAutomovil.timePrestamoMes = tiempoPrestamoMes;
-                    prestamoAutomovil.setCiudadPrestamo(ciudadPrestamo);
+                    prestamoAutomovil.tiempoPrestamo = tiempoPrestamoMes;
+                    prestamoAutomovil.setCiudad(ciudadPrestamo);
                     prestamoAutomovil.calcularValorAutoPrestamo();
 
                     // Agregar préstamo al arreglo de préstamos
@@ -107,9 +107,9 @@ public class Ejecutor {
                     // Crear objeto PrestamoEducativo y establecer valores
                     PrestamoEducativo prestamoEdu = new PrestamoEducativo(beneficiarioEdu, tiempoPrestamoMesEdu,
                             ciudadPrestamoEdu, nivelEdu, institutoEdu, valorCarreraEdu);
-                    prestamoEdu.calcularValorMesPrestamoCarrera();
+                    prestamoEdu.calcularValorPorMesPrestamoCarrera();
                     prestamoEdu.beneficiario = beneficiarioEdu;
-                    prestamoEdu.timePrestamoMes = tiempoPrestamoMesEdu;
+                    prestamoEdu.tiempoPrestamo = tiempoPrestamoMesEdu;
 
                     // Agregar préstamo al arreglo de préstamos
                     prestamos[cantidadPrestamos] = prestamoEdu;

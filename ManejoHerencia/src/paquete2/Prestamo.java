@@ -3,46 +3,46 @@ import Taller.paquete5.Persona;
 
 public class Prestamo {
     public Persona beneficiario;
-    public double timePrestamoMes;
-    public String ciudadPrestamo;
+    public double tiempoPrestamo;
+    public String ciudad;
 
     public Prestamo() {
     }
 
-    public Prestamo(Persona beneficiario, double timePrestamoMes, String ciudadPrestamo) {
+    public Prestamo(Persona beneficiario, double tiempoPrestamo, String ciudad) {
         this.beneficiario = beneficiario;
-        this.timePrestamoMes = timePrestamoMes;
-        this.ciudadPrestamo = ciudadPrestamo;
+        this.tiempoPrestamo = tiempoPrestamo;
+        this.ciudad = ciudad;
     }
 
     public Persona getBeneficiario() {
         return beneficiario;
     }
 
-    public double getTimePrestamoMes() {
-        return timePrestamoMes;
+    public double getTiempoPrestamo() {
+        return tiempoPrestamo;
     }
 
-    public String getCiudadPrestamo() {
-        return ciudadPrestamo;
+    public String getCiudad() {
+        return ciudad;
     }
 
     public void setBeneficiario(Persona beneficiario) {
         this.beneficiario = beneficiario;
     }
 
-    public void setTimePrestamoMes(double timePrestamoMes) {
-        this.timePrestamoMes = timePrestamoMes;
+    public void setTiempoPrestamo(double tiempoPrestamo) {
+        this.tiempoPrestamo = tiempoPrestamo;
     }
 
-    public void setCiudadPrestamo(String ciudadPrestamo) {
-        this.ciudadPrestamo = ciudadPrestamo;
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
 
     @Override
     public String toString() {
         return "BENEFICIARIO: " + beneficiario +
-                "\nTIEMPO PRESTAMO (MESES): " + timePrestamoMes +
-                "\nCIUDAD DONDE FUE EL PRESTAMO: " + ciudadPrestamo;
+                "\nTIEMPO PRESTAMO (MESES): " + tiempoPrestamo +
+                "\nCIUDAD DONDE FUE EL PRESTAMO: " + ciudad;
     }
 }

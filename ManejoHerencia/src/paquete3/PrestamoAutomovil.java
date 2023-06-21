@@ -4,60 +4,60 @@ import Taller.paquete5.Persona;
 import Taller.paquete2.Prestamo;
 
 public class PrestamoAutomovil extends Prestamo {
-    public String tipoAuto;
-    public String marcaAuto;
-    public Persona garante1;
-    public double valorAuto;
-    public double valorAutoPrestamoAuto;
+    public String tipoAutomovil;
+    public String marcaAutomovi;
+    public Persona garante;
+    public double valorAutomovil;
+    public double valorPrestamo;
 
-    public PrestamoAutomovil(String tipoAuto, String marcaAuto, Persona garante1, double valorAuto) {
-        this.tipoAuto = tipoAuto;
-        this.marcaAuto = marcaAuto;
-        this.garante1 = garante1;
-        this.valorAuto = valorAuto;
+    public PrestamoAutomovil(String tipoAutomovil, String marcaAutomovi, Persona garante, double valorAutomovil) {
+        this.tipoAutomovil = tipoAutomovil;
+        this.marcaAutomovi = marcaAutomovi;
+        this.garante = garante;
+        this.valorAutomovil = valorAutomovil;
     }
 
     public String getTipoAuto() {
-        return tipoAuto;
+        return tipoAutomovil;
     }
 
     public void setTipoAuto(String tipoAuto) {
-        this.tipoAuto = tipoAuto;
+        this.tipoAutomovil = tipoAuto;
     }
 
     public String getMarcaAuto() {
-        return marcaAuto;
+        return marcaAutomovi;
     }
 
     public void setMarcaAuto(String marcaAuto) {
-        this.marcaAuto = marcaAuto;
+        this.marcaAutomovi= marcaAuto;
     }
 
     public Persona getGarante1() {
-        return garante1;
+        return garante;
     }
 
     public void setGarante1(Persona garante1) {
-        this.garante1 = garante1;
+        this.garante = garante1;
     }
 
     public double getValorAuto() {
-        return valorAuto;
+        return valorAutomovil;
     }
 
     public double calcularValorAutoPrestamo() {
-        this.valorAutoPrestamoAuto = valorAuto / timePrestamoMes;
-        return valorAutoPrestamoAuto;
+        this.valorPrestamo = valorAutomovil / tiempoPrestamo;
+        return valorPrestamo;
     }
 
     @Override
     public String toString() {
         return super.toString() +
                 "Prestamo Automovil" +
-                "\ntipoAuto: " + tipoAuto +
-                "\nmarcaAuto: " + marcaAuto +
-                "\ngarante1: " + garante1 +
-                "\nvalorAuto: " + valorAuto +
-                "\nValor del auto con el prestamo de meses: " + valorAutoPrestamoAuto;
+                "\ntipoAuto: " + tipoAutomovil +
+                "\nmarcaAuto: " + marcaAutomovi +
+                "\ngarante1: " + garante +
+                "\nvalorAuto: " + valorAutomovil +
+                "\nValor del auto con el prestamo de meses: " + valorPrestamo;
     }
 }

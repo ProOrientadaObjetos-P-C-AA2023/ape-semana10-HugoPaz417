@@ -1,20 +1,20 @@
 package Taller.paquete5;
 public class Persona {
-    public String nomPersona;
+    public String nombrePersona;
     public String apellidosPersona;
-    public String userPersona;
+    public String userNamePersona;
 
     public Persona() {
     }
 
     public Persona(String nomPersona, String apellidosPersona, String userPersona) {
-        this.nomPersona = nomPersona;
+        this.nombrePersona = nomPersona;
         this.apellidosPersona = apellidosPersona;
-        this.userPersona = userPersona;
+        this.userNamePersona = userPersona;
     }
 
     public void setNomPersona(String nomPersona) {
-        this.nomPersona = nomPersona;
+        this.nombrePersona = nomPersona;
     }
 
     public void setApellidosPersona(String apellidosPersona) {
@@ -22,11 +22,11 @@ public class Persona {
     }
 
     public void setUserPersona(String userPersona) {
-        this.userPersona = userPersona;
+        this.userNamePersona = userPersona;
     }
 
     public String getNomPersona() {
-        return nomPersona;
+        return nombrePersona;
     }
 
     public String getApellidosPersona() {
@@ -34,13 +34,13 @@ public class Persona {
     }
 
     public String getUserPersona() {
-        return userPersona;
+        return userNamePersona;
     }
 
     @Override
     public String toString() {
-        return "Nombre del beneficiario: " + nomPersona +
+        return "Nombre del beneficiario: " + nombrePersona +
                 "\nApellidos del beneficiario: " + apellidosPersona +
-                "\nUsuario del beneficiario: " + userPersona;
+                "\nUsuario del beneficiario: " + userNamePersona;
     }
 }

@@ -1,35 +1,35 @@
 package Taller.paquete4;
 public class InstitutoEducativo {
-    public String nomInst;
-    public String siglasInst;
+    public String nombreInstitucion;
+    public String siglasInstitucion;
 
     public InstitutoEducativo() {
     }
 
     public InstitutoEducativo(String nomInst, String siglasInst) {
-        this.nomInst = nomInst;
-        this.siglasInst = siglasInst;
+        this.nombreInstitucion = nomInst;
+        this.siglasInstitucion = siglasInst;
     }
 
-    public String getNomInst() {
-        return nomInst;
+    public String getNombreInstitucion() {
+        return nombreInstitucion;
     }
 
-    public void setNomInst(String nomInst) {
-        this.nomInst = nomInst;
+    public void setNombreInstitucion(String nombreInstitucion) {
+        this.nombreInstitucion = nombreInstitucion;
     }
 
-    public String getSiglasInst() {
-        return siglasInst;
+    public String getSiglasInstitucion() {
+        return siglasInstitucion;
     }
 
-    public void setSiglasInst(String siglasInst) {
-        this.siglasInst = siglasInst;
+    public void setSiglasInstitucion(String siglasInstitucion) {
+        this.siglasInstitucion = siglasInstitucion;
     }
 
     @Override
     public String toString() {
-        return "NOMBRE INSTITUTO: " + nomInst +
-                "\nSIGLAS INSTITUTO: " + siglasInst;
+        return "NOMBRE INSTITUTO: " + nombreInstitucion +
+                "\nSIGLAS INSTITUTO: " + siglasInstitucion;
     }
 }
